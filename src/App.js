@@ -27,7 +27,6 @@ function App() {
   }
   return (
     <div className="app">
-    <div className="container">
     <div className="search">
       <input value = {location} 
       onChange={event => setLocation(event.target.value)}
@@ -35,6 +34,7 @@ function App() {
       placeholder='Enter location'
       type='text'/> 
     </div>
+    <div className="container">
     <h2>{msg}</h2>
       <div className="top">
         <div className="location">
