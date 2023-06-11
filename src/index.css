@@ -42,7 +42,7 @@ h1{
 }
 .container {
     max-width: 700px;
-    height: 700px;
+    height: 600px;
     margin: auto;
     padding: 0 1rem;
     position: relative;
@@ -69,8 +69,8 @@ h1{
     width: 100%;
     margin: 1rem auto;
     padding: 1rem;
-    margin-bottom: 3rem;
     border-radius: 12px;
+    margin-bottom: 3rem;
     background-color: rgba(255, 255, 255, 0.2);
 }
 .bold{
