@@ -27,27 +27,27 @@ function App() {
   }
   return (
     <div className="app">
-    <div className="search">
+    <div className="container">
+        <div className="search">
       <input value = {location} 
       onChange={event => setLocation(event.target.value)}
       onKeyPress={searchLocation} 
       placeholder='Enter location'
       type='text'/> 
     </div>
-    <div className="container">
     <h2>{msg}</h2>
       <div className="top">
         <div className="location">
           <p className="">{data.name ? data.name:<h1>{error}</h1>}</p>
         </div>
-        <div className="temp"> {data.main ? <h1>{data.main.temp}F</h1>:null}</div>
+        <div className="temp"> {data.main ? <h1>{(data.main.temp - 273.15).toFixed(2)}°C</h1> : null}</div>
       <div className="description">
         <p className="">{data.weather ? <p>{data.weather[0].main}</p>:null} </p>
       </div>
     </div>
     <div className="bottom">
       <div className="feels">
-        <p className="">{data.main ? <p>{data.main.feels_like}</p>:null}</p>
+        <p className="">{data.main ? <p>{(data.main.feels_like - 273.15).toFixed(2)}°C</p> : null}</p>
         <p>Feels Like</p>
       </div>
       <div className="humidity">
