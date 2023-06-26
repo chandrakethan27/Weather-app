@@ -6,7 +6,7 @@
     padding:0;
 }
 h2{
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
     margin-top: 7rem;
 }
@@ -40,9 +40,20 @@ h1{
     left:0;
     z-index:-1;
 }
+
+.app .search :focus{
+    background-color: rgba(0, 0, 0, 0.4);
+    color:aliceblue;
+    outline: none;
+}
+
+.app .search :hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 .container {
     max-width: 700px;
-    height: 700px;
+    height: 600px;
     margin: auto;
     padding: 0 1rem;
     position: relative;
@@ -70,6 +81,7 @@ h1{
     margin: 1rem auto;
     padding: 1rem;
     border-radius: 12px;
+    margin-bottom: 3rem;
     background-color: rgba(255, 255, 255, 0.2);
 }
 .bold{
@@ -78,6 +90,7 @@ h1{
 .app .search{
     text-align: center;
     padding: 1rem;
+
 }
 .app input{
     padding: .7rem 1.5rem;
@@ -85,6 +98,7 @@ h1{
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.8);
     background: rgba(255, 255, 255, 0.1);
+    width: 20rem;
 }
 ::placeholder{
     color:aliceblue
