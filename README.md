@@ -1,6 +1,6 @@
 # Weather App - React Powered Weather Forecast
 
-Welcome to our Weather App, a user-friendly application built using React. Check real-time weather forecasts for any location worldwide with data fetched from a reliable weather API.
+Welcome to my Weather App, a user-friendly application built using React. Check real-time weather forecasts for any location worldwide with data fetched from a reliable weather API.
 
 **Features:**
 - Real-Time Weather Data
